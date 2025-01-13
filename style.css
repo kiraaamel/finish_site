@@ -170,3 +170,20 @@ button:active {
 button:focus {
     text-decoration: underline;
 }
+
+footer {
+    text-align: center;
+    background-color: #7F4870;
+    color: #DBC3DB;
+    padding: 3px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: larger;
+    height: 5%;
+}
+  
+.day {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}

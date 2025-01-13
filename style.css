@@ -127,3 +127,46 @@ input:focus::placeholder {
 input[required]{
     border: 2px solid rgb(255, 0, 179);
 }
+
+.reg {
+    background-color: #663E59;
+    color: #FFF0F5;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 1.5em;
+    margin-bottom: 3em;
+    font-family: "Alegreya", serif;
+    font-size: larger;
+    margin-left: 20px;
+}
+  
+.sbros {
+    background-color: #DB2222;
+    color: #FFF0F5;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 1.5em;
+    margin-bottom: 3em;
+    font-family: "Alegreya", serif;
+    font-size: larger;
+    margin-left: 20px;
+}
+  
+button:hover {
+    background-color: #ef83d1;
+    border: 3px solid #663E59;
+    color:#2a1b2f;
+    transform: translateY(-10px);
+}
+  
+button:active {
+    background-color: pink;
+}
+  
+button:focus {
+    text-decoration: underline;
+}

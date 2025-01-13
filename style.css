@@ -87,3 +87,43 @@ a:active {
     text-align: center;
     font-weight: bold;
 }
+
+fieldset {
+    border: 3px solid purple;
+    margin-bottom: 10px;
+}
+  
+label {
+    display: block;
+    margin: 10px 10px 5px;
+    font-size: 1.5vw;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    color: #663E59;
+    font-weight: bolder;
+}
+  
+input {
+    width: 100%;
+    height: auto;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 2px solid #f19ad8;
+    border-radius: 10px;
+    box-shadow: 10px 10px 19px 3px rgba(222, 76, 138, 0.26);
+}
+  
+input::placeholder {
+    color: #78163F;
+    /* font-style: italic; */
+    font-size: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+}
+  
+input:focus::placeholder {
+    color: #2c0435;
+}
+  
+input[required]{
+    border: 2px solid rgb(255, 0, 179);
+}

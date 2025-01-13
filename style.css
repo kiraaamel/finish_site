@@ -38,3 +38,16 @@ a:active {
     color:rgb(149, 63, 152);
     transition: color 0.3s ease;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+   
+::-webkit-scrollbar-thumb {
+    background-color: #f19ad8;
+    border-radius: 10px;
+}
+   
+::-webkit-scrollbar-track {
+    background-color: #f9eef6;
+}

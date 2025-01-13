@@ -11,3 +11,30 @@ html {
 body {
     background-color: #FFF0F5;
 }
+
+header {
+    background-color: #7F4870;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+  
+header a {
+    color: #f7cbdd;
+    font-size: 2vw;
+    text-decoration: none;
+}
+  
+a:visited {
+    color: rgb(195, 169, 217);
+}
+  
+a:hover {  
+    color: rgb(128, 128, 193);
+}
+  
+a:active {
+    color:rgb(149, 63, 152);
+    transition: color 0.3s ease;
+}

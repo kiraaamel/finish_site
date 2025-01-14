@@ -94,20 +94,28 @@ header {
     gap: 35px;
 }
 
+.logo {
+    width: 20vw; 
+    height: auto;
+}
+
 .contact {
     margin-left: 10px;
 }
 
 .mobile {
     display: flex;
-    align-items: center;
+    align-items: right;
     font-weight: 700;
     color:#81314c;
+    width: 7vw;
+    font-size: 1.4vw;
 }
 
 .header_phone {
     line-height: 0;
     color:rgb(91, 38, 92);
+    font-size: 1.5vw;
 }
 
 .header_phone a {
@@ -117,6 +125,7 @@ header {
     text-decoration: none;
     color: rgb(91, 38, 92);
     transition: color .3s ease;
+    font-size: 1.5vw;
 }
 
 ::-webkit-scrollbar {
@@ -158,6 +167,7 @@ header {
 .card_image {
     margin: 15px;
     width: 90%; 
+    border-radius: 40px;
     object-fit: contain; /* Картинка сохраняет пропорции, обрезается по краям */
 }
 

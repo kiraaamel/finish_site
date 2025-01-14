@@ -286,7 +286,7 @@ input[required] {
     }
 
     .photoreg {
-        width: 90%;
+        width: 50%;
     }
 
     fieldset {
@@ -298,11 +298,11 @@ input[required] {
     }
 
     label {
-        font-size: 5vw;
+        font-size: 10vw;
     }
 
     input {
-        font-size: 5vw;
+        font-size: 3vw;
     }
 }
 

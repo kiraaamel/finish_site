@@ -140,6 +140,7 @@ header {
 ::-webkit-scrollbar-track {
     background-color: #f9eef6;
 }
+
 .cards-container {
     display: flex;
     flex-wrap: wrap; /* Для автоматического переноса карточек при нехватке места */

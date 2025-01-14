@@ -101,16 +101,15 @@ header {
 
 .contact {
     margin-left: 10px;
-    font-size: 1.5vw;
 }
 
 .mobile {
     display: flex;
-    align-items: center;
+    align-items: right;
     font-weight: 700;
     color:#81314c;
     width: 7vw;
-    font-size: 1.5vw;
+    font-size: 1.4vw;
 }
 
 .header_phone {
@@ -126,6 +125,7 @@ header {
     text-decoration: none;
     color: rgb(91, 38, 92);
     transition: color .3s ease;
+    font-size: 1.5vw;
 }
 
 ::-webkit-scrollbar {

@@ -46,7 +46,7 @@ header {
     display: inline-block;
     line-height: 60px;
     position: relative;
-    color:rgb(91, 38, 92);
+    color:#db7093;
     font-size: 1.5vw;
     text-decoration: none;
 }
@@ -96,14 +96,13 @@ header {
 
 .contact {
     margin-left: 10px;
-    color:#2a1b2f;
 }
 
 .mobile {
     display: flex;
     align-items: center;
     font-weight: 700;
-    color:rgb(91, 38, 92);
+    color:#81314c;
 }
 
 .header_phone {
@@ -134,7 +133,12 @@ header {
 }
 
 .text {
-    color: #663E59;
+    color: #FFF0F5;
+    text-shadow: 
+        2px 2px 0 #db7093,  /* Тень справа снизу */
+       -2px 2px 0 #db7093,  /* Тень слева снизу */
+        2px -2px 0 #db7093, /* Тень справа сверху */
+       -2px -2px 0 #db7093; /* Тень слева сверху */
     text-align: center;
     background: 50% 100% / 50% 50% no-repeat radial-gradient(ellipse at bottom, #e48772, transparent, transparent);
     -webkit-background-clip: text; 
@@ -231,7 +235,7 @@ input[required]{
 
 footer {
     text-align: center;
-    background-color: #7F4870;
+    background-color: #db7093;
     color: #DBC3DB;
     padding: 3px;
     position: fixed;

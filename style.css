@@ -265,6 +265,15 @@ footer {
     transition: background-position .3s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .5s ease 0s, background-color .5s ease;
   }
   
+  .regknopka{
+    text-decoration: none;
+    color: #f39b88;
+  }
+
+  .regknopka:hover {
+    color: rgba(255, 255, 255, 1)
+  }
+
   .reg:hover{
     color:rgba(255, 255, 255, 1);
     background-color:#f39b88;

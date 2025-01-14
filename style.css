@@ -120,20 +120,6 @@ header {
     transition: color .3s ease;
 }
 
-  
-a:visited {
-    color: rgb(195, 169, 217);
-}
-  
-a:hover {  
-    color: rgb(128, 128, 193);
-}
-  
-a:active {
-    color:rgb(149, 63, 152);
-    transition: color 0.3s ease;
-}
-
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -147,33 +133,32 @@ a:active {
     background-color: #f9eef6;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 150px auto;
-    grid-gap: 20px;
-    padding: 20px;
-    border-radius: 15px;
-}
-  
-.container > img {
-    grid-column: 1;
-    align-self: center;
-    justify-self: right;
-    max-width: 70px;
-    border-radius: 10px;
-    border: 4px solid #7F4870;
-}
-  
 .text {
-    grid-column: 2; 
-    align-self: center;
-    justify-self: center;
     color: #663E59;
-    text-shadow: 5px 5px 3px rgba(222,76,138,0.85);
-    font-size: 2.5vw;
-    -webkit-text-stroke: 0.5px #B784A7;
-    font-family: "Alegreya", serif;
-}
+    text-align: center;
+    background: 50% 100% / 50% 50% no-repeat radial-gradient(ellipse at bottom, rgb(255, 0, 179), transparent, transparent);
+    -webkit-background-clip: text; 
+    background-clip: text;
+    font-size: 3.5vw;
+    font-family: "Source Sans Pro", sans-serif;
+    animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+  }
+  
+  @keyframes reveal {
+    80% {
+      letter-spacing: 6px;
+    }
+    100% {
+      background-size: 250% 250%;
+    }
+  }
+  
+  @keyframes glow {
+    40% {
+      text-shadow: 0 0 15px rgb(255, 0, 179);
+    }
+  }
+  
 
 .introduction {
     color: #78163F;

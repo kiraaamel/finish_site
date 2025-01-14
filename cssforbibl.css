@@ -149,7 +149,8 @@ header {
 }
 
 .cardd {
-    margin-left: 5vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
     margin-bottom: 3vw;
     width: 250px; 
     border-radius: 20px;

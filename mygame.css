@@ -5,18 +5,16 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    margin-top: 30px;
+    font-family:  "Alegreya", serif ;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    color: #333;
+    color: #db7093;
+    background-image: url('./фон.jpg');
 }
 
-.cell {
-    border: 3px solid black;
-}
 .container {
     text-align: center;
 }
@@ -24,12 +22,13 @@ body {
 h1 {
     margin-bottom: 20px;
     font-size: 24px;
+    font-size: 2vw;
 }
 
 .game-board {
     display: grid;
-    grid-template-columns: repeat(15, 40px);
-    grid-template-rows: repeat(15, 40px);
+    grid-template-columns: repeat(15, 3vw);
+    grid-template-rows: repeat(15, 2.5vw);
     gap: 1px;
     margin-bottom: 20px;
 }
@@ -42,7 +41,7 @@ h1 {
     width: 40px;
     height: 40px;
     background-color: #fff;
-    border: 1px solid #ccc;
+    border: 2px solid #f39b88;
     cursor: pointer;
 }
 
@@ -93,3 +92,33 @@ input::placeholder {
 input:focus::placeholder {
     color: #2c0435;
 }
+
+button {
+    display: inline-block;
+    font: 300 1.3em 'Open Sans';
+    text-decoration: none; 
+    color: #f39b88;
+    background-color: transparent;
+    border: 2px solid #f39b88;
+    border-radius: 100px;
+    padding: .3em 1.2em;
+    margin: 20px;
+    background-size: 200% 100%; 
+    background-image: linear-gradient(to right, transparent 50%, #f39b88 50%);
+    transition: background-position .3s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .5s ease 0s, background-color .5s ease;
+  }
+  
+  button {
+    text-decoration: none;
+    color: #f39b88;
+  }
+
+  button:hover {
+    color: rgba(255, 255, 255, 1)
+  }
+
+  button:hover{
+    color:rgba(255, 255, 255, 1);
+    background-color:#f39b88;
+    background-position: -100% 100%;
+  }

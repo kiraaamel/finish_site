@@ -245,10 +245,10 @@ input[required] {
     border: 3px solid #E4717A;
 }
 
-/* Адаптация для мобильных устройств */
+
 @media (max-width: 768px) {
     .container {
-        grid-template-columns: 1fr; /* Один столбец для мобильных */
+        grid-template-columns: 1fr 1fr; /* Один столбец для мобильных */
         padding: 5%;
         left: 0;
         right: 0;

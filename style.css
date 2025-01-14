@@ -172,7 +172,141 @@ header {
     }
   }
   
-.container {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Два столбца с одинаковой шириной */
+    grid-gap: 20px; /* Отступы между элементами */
+    padding: 5vw;
+    background-color: white;
+    position: absolute;
+    left: 10vw;
+    right: 10vw;
+}
+
+.photoreg {
+    grid-column: 1; /* По линиям сетки */
+    align-self: center;
+    justify-self: right;
+    width: 100%; /* Адаптация под ширину контейнера */
+    height: auto;
+}
+
+form {
+    grid-column: 2; /* По линиям сетки */
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+}
+
+fieldset {
+    border: 3px solid #FFBCAD;
+    margin-bottom: 2vw;
+    padding: 2vw;
+}
+
+legend {
+    font-family: "Alegreya", serif;
+    color: rgb(91, 38, 92);
+    font-size: 2vw; /* Размер шрифта зависит от ширины экрана */
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 1vw 0 0.5vw;
+    font-size: 2vw;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    color: #663E59;
+    font-weight: bolder;
+}
+
+input {
+    width: 100%;
+    padding: 1vw;
+    margin-bottom: 2vw;
+    border: 2px solid #FF9BAA;
+    border-radius: 1vw;
+    box-shadow: 1vw 1vw 2vw rgba(222, 76, 138, 0.26);
+    font-size: 1.5vw; /* Размер шрифта в поле */
+}
+
+input::placeholder {
+    color: #78163F;
+    font-size: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input:focus::placeholder {
+    color: #2c0435;
+}
+
+input[required] {
+    border: 3px solid #E4717A;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* Один столбец для мобильных */
+        padding: 5%;
+        left: 0;
+        right: 0;
+    }
+
+    .photoreg {
+        justify-self: center;
+        width: 80%; /* Меньший размер на мобильных */
+    }
+
+    form {
+        width: 100%;
+    }
+
+    fieldset {
+        padding: 4vw;
+    }
+
+    legend {
+        font-size: 4vw; /* Больше размер на мобильных */
+    }
+
+    label {
+        font-size: 4vw;
+    }
+
+    input {
+        font-size: 4vw; /* Больше шрифт на мобильных */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 4%;
+    }
+
+    .photoreg {
+        width: 90%;
+    }
+
+    fieldset {
+        padding: 5vw;
+    }
+
+    legend {
+        font-size: 5vw;
+    }
+
+    label {
+        font-size: 5vw;
+    }
+
+    input {
+        font-size: 5vw;
+    }
+}
+
+/* .container {
     display: grid;
     grid-template-columns: 530px 480px;
     grid-gap: 20px; /* отступы между элементами */
@@ -240,7 +374,7 @@ input:focus::placeholder {
   
 input[required]{
     border: 3px solid #E4717A;
-}
+} */
 
 footer {
     text-align: center;

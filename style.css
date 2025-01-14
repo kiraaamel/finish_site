@@ -13,6 +13,101 @@ body {
 }
 
 header {
+    background-color: #FFF0F5;
+    font-size: 25px;
+    position: relative;
+    z-index: 999;
+    top: 0;
+    font-family:  "Alegreya", serif ;
+}
+
+.header_menu {
+    font-weight: 700;
+    display: flex;
+}
+
+.header_menu ul {
+    height: 44px;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header_menu ul li {
+    margin-right: 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: inherit;
+    position: relative;
+}
+
+.header_menu ul li a {
+    display: inline-block;
+    line-height: 44px;
+    transition: color .3s ease;
+    position: relative;
+    color: #b73d70;
+    font-size: 1.5vw;
+    text-decoration: none;
+}
+
+.cont {
+    width: 100%;
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+.hh {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    position: relative;
+}
+
+.header_logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 0;
+}
+
+.logo {
+    transition: opacity .2s .1s;
+    max-width: 100%;
+}
+
+.header_right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 35px;
+}
+
+.mobile {
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+}
+
+.header_phone {
+    line-height: 0;
+    transition: opacity .3s;
+}
+
+.header_phone a {
+    display: inline-block;
+    font-weight: 900;
+    line-height: 44px;
+    transition: color .3s ease;
+}
+
+/* header {
     background-color: #7F4870;
     padding: 10px;
     text-align: center;
@@ -24,7 +119,7 @@ header a {
     color: #f7cbdd;
     font-size: 2vw;
     text-decoration: none;
-}
+}*/
   
 a:visited {
     color: rgb(195, 169, 217);

@@ -228,7 +228,7 @@ input {
     border: 2px solid #FF9BAA;
     border-radius: 1vw;
     box-shadow: 1vw 1vw 2vw rgba(222, 76, 138, 0.26);
-    font-size: 1.5vw; /* Размер шрифта в поле */
+    font-size: 1.5vw;
 }
 
 input::placeholder {

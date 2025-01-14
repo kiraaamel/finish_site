@@ -228,3 +228,27 @@ footer {
     margin-bottom: 10px;
     margin-top: 10px;
 }
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    .header_logo {
+        width: 80%;
+        height: auto;
+    }
+}
+
+/* Для экранов шириной до 480px (мобильные устройства) */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+    .header_logo {
+        width: 10vw;
+        height: auto;
+    }
+    .menu {
+        flex-direction: column; /* Столбцом вместо строки */
+    }
+}

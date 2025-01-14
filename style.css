@@ -27,7 +27,7 @@ header {
 }
 
 .header_menu ul {
-    height: 44px;
+    height: 60px;
     display: flex;
     list-style: none;
     padding: 0;
@@ -39,23 +39,33 @@ header {
     height: 100%;
     display: flex;
     align-items: center;
-    color: inherit;
     position: relative;
 }
 
 .header_menu ul li a {
     display: inline-block;
-    line-height: 44px;
-    transition: color .3s ease;
+    line-height: 60px;
     position: relative;
-    color: #b73d70;
+    color:rgb(91, 38, 92);
     font-size: 1.5vw;
     text-decoration: none;
 }
 
+.header_menu ul li a:hover {
+    color: rgb(128, 128, 193);
+}
+
+.header_menu ul li a:visited {
+    color: rgb(174, 124, 219);
+}
+  
+.header_menu ul li a:active {
+    color:rgb(149, 63, 152);
+    transition: color 0.3s ease;
+}
+
 .cont {
-    width: 100%;
-    max-width: 1240px;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     padding: 0 20px;
@@ -73,12 +83,7 @@ header {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    line-height: 0;
-}
-
-.logo {
-    transition: opacity .2s .1s;
-    max-width: 100%;
+    line-height: 100;
 }
 
 .header_right {
@@ -89,37 +94,32 @@ header {
     gap: 35px;
 }
 
+.contact {
+    margin-left: 10px;
+    color:#2a1b2f;
+}
+
 .mobile {
     display: flex;
     align-items: center;
-    font-weight: 900;
+    font-weight: 700;
+    color:rgb(91, 38, 92);
 }
 
 .header_phone {
     line-height: 0;
-    transition: opacity .3s;
+    color:rgb(91, 38, 92);
 }
 
 .header_phone a {
     display: inline-block;
-    font-weight: 900;
+    font-weight: 700;
     line-height: 44px;
+    text-decoration: none;
+    color: rgb(91, 38, 92);
     transition: color .3s ease;
 }
 
-/* header {
-    background-color: #7F4870;
-    padding: 10px;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-}
-  
-header a {
-    color: #f7cbdd;
-    font-size: 2vw;
-    text-decoration: none;
-}*/
   
 a:visited {
     color: rgb(195, 169, 217);

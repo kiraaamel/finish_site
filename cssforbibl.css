@@ -131,9 +131,16 @@ header {
 ::-webkit-scrollbar-track {
     background-color: #f9eef6;
 }
+.cards-container {
+    display: flex;
+    flex-wrap: wrap; /* Для автоматического переноса карточек при нехватке места */
+    justify-content: center; /* Центровка карточек в контейнере */
+    padding: 20px;
+}
 
 .cardd {
-    margin: 5vw;
+    margin-left: 5vw;
+    margin-bottom: 3vw;
     width: 250px; 
     border-radius: 20px;
     overflow: hidden; 

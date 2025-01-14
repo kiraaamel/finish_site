@@ -256,11 +256,11 @@ input[required] {
 
     .photoreg {
         justify-self: center;
-        width: 80%; /* Меньший размер на мобильных */
+        width: 20%;
     }
 
     form {
-        width: 100%;
+        width: 70%;
     }
 
     fieldset {
@@ -268,7 +268,7 @@ input[required] {
     }
 
     legend {
-        font-size: 4vw; /* Больше размер на мобильных */
+        font-size: 4vw;
     }
 
     label {
@@ -276,7 +276,7 @@ input[required] {
     }
 
     input {
-        font-size: 4vw; /* Больше шрифт на мобильных */
+        font-size: 4vw; 
     }
 }
 
@@ -290,7 +290,7 @@ input[required] {
     }
 
     fieldset {
-        padding: 5vw;
+        padding: 4vw;
     }
 
     legend {

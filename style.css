@@ -10,6 +10,7 @@ html {
   
 body {
     background-color: #FFF0F5;
+    height: 70vw;
 }
 
 header {
@@ -181,18 +182,20 @@ header {
     position: absolute;
     left: 10vw;
     right: 10vw;
+    bottom: 50vw;
+    top: 13vw;
+    height: 40vw;
 }
 
 .photoreg {
-    grid-column: 1; /* По линиям сетки */
-    align-self: center;
-    justify-self: right;
-    width: 100%; /* Адаптация под ширину контейнера */
+    grid-column: 1;
+    width: auto;
     height: auto;
+    margin-top: 2.1vw;
 }
 
 form {
-    grid-column: 2; /* По линиям сетки */
+    grid-column: 2;
     align-self: center;
     justify-self: center;
     width: 100%;
@@ -200,21 +203,20 @@ form {
 
 fieldset {
     border: 3px solid #FFBCAD;
-    margin-bottom: 2vw;
-    padding: 2vw;
+    padding: 1vw;
 }
 
 legend {
     font-family: "Alegreya", serif;
     color: rgb(91, 38, 92);
-    font-size: 2vw; /* Размер шрифта зависит от ширины экрана */
+    font-size: 1.5vw; 
     text-align: center;
 }
 
 label {
     display: block;
     margin: 1vw 0 0.5vw;
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
     color: #663E59;
@@ -224,16 +226,15 @@ label {
 input {
     width: 100%;
     padding: 1vw;
-    margin-bottom: 2vw;
     border: 2px solid #FF9BAA;
     border-radius: 1vw;
     box-shadow: 1vw 1vw 2vw rgba(222, 76, 138, 0.26);
-    font-size: 1.5vw;
+    font-size: 1vw;
 }
 
 input::placeholder {
     color: #78163F;
-    font-size: 1.5em;
+    font-size: 1em;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -305,75 +306,6 @@ input[required] {
         font-size: 2vw;
     }
 }
-
-/* .container {
-    display: grid;
-    grid-template-columns: 530px 480px;
-    grid-gap: 20px; /* отступы между элементами 
-    padding: 20px;
-    background-color: white;
-    position: absolute;
-    left: 20vw;
-}
-
-.photoreg {
-    grid-column: 1; /*по линиям сетки
-    align-self: center;
-    justify-self: right;
-    width: auto;
-    height: auto;
-}
-
-form {
-    grid-column: 2; /*по линиям сетки
-    align-self: center;
-    justify-self: center;
-}
-
-fieldset {
-    border: 3px solid  #FFBCAD;
-    margin-bottom: 10px;
-}
- 
-legend {
-    font-family:  "Alegreya", serif ;
-    color:rgb(91, 38, 92);
-    font-size: 1.5vw;
-    text-align: center;
-}
-label {
-    display: block;
-    margin: 10px 10px 5px;
-    font-size: 1.5vw;
-    font-style: italic;
-    font-family: 'Times New Roman', Times, serif;
-    color: #663E59;
-    font-weight: bolder;
-}
-  
-input {
-    width: 100%;
-    height: auto;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 2px solid #FF9BAA;
-    border-radius: 10px;
-    box-shadow: 10px 10px 19px 3px rgba(222, 76, 138, 0.26);
-}
-  
-input::placeholder {
-    color: #78163F;
-    font-size: 1.5em;
-    font-family: 'Times New Roman', Times, serif;
-}
-  
-input:focus::placeholder {
-    color: #2c0435;
-}
-  
-input[required]{
-    border: 3px solid #E4717A;
-} */
 
 footer {
     text-align: center;

@@ -241,6 +241,9 @@ footer {
     .logo {
         width: 20vw;
     }
+    .mobile {
+        width: 2vw;
+    }
 }
 
 @media (max-width: 480px) {
@@ -261,5 +264,9 @@ footer {
     svg {
         width: 15;
         height: 15;
+    }
+
+    .mobile {
+        width: 2vw;
     }
 }

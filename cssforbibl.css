@@ -236,21 +236,30 @@ footer {
         font-size: 14px;
     }
     .header_logo {
-        width: 20%;
-        height: auto;
+        left: 45%;
+    }
+    .logo {
+        width: 20vw;
     }
 }
 
-/* Для экранов шириной до 480px (мобильные устройства) */
 @media (max-width: 480px) {
     body {
         font-size: 12px;
     }
     .header_logo {
-        width: 15%;
-        height: auto;
+        left: 45%;
     }
-    .menu {
-        flex-direction: column; /* Столбцом вместо строки */
+    .logo {
+        width: 20vw;
+    }
+    .header_menu ul li a {
+        font-size: 1vw;
+        line-height: 10px;
+    }
+
+    svg {
+        width: 15;
+        height: 15;
     }
 }

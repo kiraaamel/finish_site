@@ -40,17 +40,17 @@
   <p class="text">ДАВАЙ ПОЗНАКОМИМСЯ :)</p>
   <div class="container">
     <div><img src="./reg.jpg" class="photoreg" alt="regphoto" loading="lazy"></div>
-      <form>
+      <form action="bibl.html" method="POST">
         <fieldset>
           <legend>Регистрация</legend>
           <p><label>Имя: <input type="text" name="name-field" placeholder="Введите ваше имя" required></label></p>
           <p><label>Номер телефона: <input type="tel" name="tel" placeholder="+7(123)456-78-90 " required></label></p>
-          <p><label>Никнейм: <input type="text" name="name-field" placeholder="Придумайте никнейм"></label></p>
+          <p><label>Никнейм: <input type="text" name="никнейм" placeholder="Придумайте никнейм"></label></p>
           <p><label>Email: <input type="email" name="email" placeholder="Введите вашу почту"></label></p>
           <p><label for="password">Пароль: <input type="password" name="password" id="password" value="password" required></label></p>
         </fieldset>
-        <button class=reg type="submit"><i class="fas fa-user-plus"></i><a class="regknopka" href="bibl.html"> Зарегистрироваться</a></button>
-        <button class=sbros type="reset" disabled> Сбросить</button>
+        <button type="submit" class=reg><i class="fas fa-user-plus"></i> Зарегистрироваться</button>
+        <button type="reset" disabled class=sbros> Сбросить</button>
       </form>
   </div>
   <footer>

@@ -1,0 +1,143 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+html {
+    scroll-behavior: smooth;
+}
+  
+body {
+    background-color: #FFF0F5;
+    height: 70vw;
+}
+
+header {
+    background-color: #FFF0F5;
+    font-size: 25px;
+    position: relative;
+    z-index: 999;
+    top: 0;
+    font-family:  "Alegreya", serif ;
+}
+
+.header_menu {
+    font-weight: 700;
+    display: flex;
+}
+
+.header_menu ul {
+    height: 60px;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header_menu ul li {
+    margin-right: 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header_menu ul li a {
+    display: inline-block;
+    line-height: 60px;
+    position: relative;
+    color:#db7093;
+    font-size: 1.5vw;
+    text-decoration: none;
+}
+
+.header_menu ul li a:hover {
+    color: #f77456;
+}
+
+.header_menu ul li a:visited {
+    color: #f39b88;
+}
+  
+.header_menu ul li a:active {
+    color:rgb(149, 63, 152);
+    transition: color 0.3s ease;
+}
+
+.cont {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+.hh {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    position: relative;
+}
+
+.header_logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 100;
+}
+
+.header_right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 35px;
+}
+
+.logo {
+    width: 20vw; 
+    height: auto;
+}
+
+.contact {
+    margin-left: 10px;
+}
+
+.mobile {
+    display: flex;
+    align-items: right;
+    font-weight: 700;
+    color:#81314c;
+    width: 7vw;
+    font-size: 1.4vw;
+}
+
+.header_phone {
+    line-height: 0;
+    color:rgb(91, 38, 92);
+    font-size: 1.5vw;
+}
+
+.header_phone a {
+    display: inline-block;
+    font-weight: 700;
+    line-height: 44px;
+    text-decoration: none;
+    color: rgb(91, 38, 92);
+    transition: color .3s ease;
+    font-size: 1.5vw;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+   
+::-webkit-scrollbar-thumb {
+    background-color: #f19ad8;
+    border-radius: 10px;
+}
+   
+::-webkit-scrollbar-track {
+    background-color: #f9eef6;
+}

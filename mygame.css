@@ -155,7 +155,7 @@ h1 {
 
 .game-board {
     display: grid;
-    grid-template-columns: repeat(15, 3vw);
+    grid-template-columns: repeat(15, 2.5vw);
     grid-template-rows: repeat(15, 2.5vw);
     gap: 1px;
     margin-bottom: 20px;
@@ -183,6 +183,7 @@ h1 {
 
 input {
     width: 35%;
+    height: 1.4vw;
     padding: 1vw;
     margin-bottom: 2vw;
     border: 2px solid #FF9BAA;
@@ -193,7 +194,7 @@ input {
 
 input::placeholder {
     color: #78163F;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -286,8 +287,10 @@ button {
         width: 2vw;
     }
     .game-board {
-        grid-template-columns: repeat(15, 6vw);
-        grid-template-rows: repeat(15, 6vw);
+        width: 60vw;
+        height: auto;
+        grid-template-columns: repeat(15, 4vw);
+        grid-template-rows: repeat(15, 4vw);
     }
     input, button {
         width: 60%;

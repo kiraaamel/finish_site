@@ -345,9 +345,13 @@ footer {
         width: 20vw;
     }
     
+    .mobile {
+        width: 4vw;
+    }
     .header_menu ul li a {
-        font-size: 1vw;
+        font-size: 1.5vw;
         line-height: 10px;
+        margin-right: 5px;
     }
 
     svg {

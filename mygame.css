@@ -66,7 +66,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 65px;
+    height: 75px;
     position: relative;
 }
 
@@ -99,7 +99,7 @@ header {
     align-items: right;
     font-weight: 700;
     color:#81314c;
-    width: 7vw;
+    width: 3vw;
     font-size: 1.4vw;
 }
 
@@ -137,7 +137,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 120vh;
     color: #db7093;
     background-image: url('фон2.jpg'); 
     background-size: cover;
@@ -148,7 +148,7 @@ body {
 }
 
 h1 {
-    margin-top: 9vw;
+    margin-top: 2vw;
     margin-bottom: 20px;
     font-size: 2vw;
 }

@@ -75,7 +75,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 65px;
+    height: 75px;
     position: relative;
 }
 
@@ -108,7 +108,7 @@ header {
     align-items: right;
     font-weight: 700;
     color:#81314c;
-    width: 7vw;
+    width: 3vw;
     font-size: 1.4vw;
 }
 

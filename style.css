@@ -379,7 +379,7 @@ footer {
     .header_phone {
         font-size: 1.5vw;
     }
-    
+
     .reg{
         font-size: 0.7em;
         padding: 0.4em 0.7em;
@@ -428,7 +428,7 @@ footer {
     form {
         grid-column: 1;
         justify-self: left;
-        width: 50%;
+        width: 70%;
     }
 
     .header_logo {

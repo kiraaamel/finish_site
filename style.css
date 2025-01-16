@@ -473,9 +473,10 @@ footer {
     }
 
     .header_menu ul li {
-        height: 10px;
+        height: 15px;
         margin-right: 0;
-        margin-bottom: 2px; 
+        margin-bottom: 20px; 
+        top: 10px;
     }
 
     svg {

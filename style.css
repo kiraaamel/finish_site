@@ -173,7 +173,7 @@ header {
     }
   }
   
-  .container {
+.container {
     display: grid;
     grid-template-columns: 1fr 1fr; 
     grid-gap: 20px;
@@ -315,17 +315,21 @@ footer {
   }
 
   @media (max-width: 1300px) {
-    body {
-        margin-top: 25px;
+    .adapt {
+        margin-top: 15vw;
     }
     .container {
         grid-template-columns: 1fr;
         height: auto; 
         padding: 3vw;
-        left: 5vw;
-        right: 5vw;
+        left: 26vw;
+        right: 24.5vw;
         bottom: auto;
         top: 10vw;
+    }
+
+    input::placeholder {
+        font-size: 1.5em;
     }
 
     .photoreg {
@@ -337,7 +341,7 @@ footer {
     form {
         grid-column: 1;
         justify-self: center;
-        width: 100%;
+        width: 50%;
     }
 
     .header_logo {
@@ -355,13 +359,16 @@ footer {
     .header_menu ul li a {
         font-size: 1.5vw;
     }
+
     .header_menu ul {
+        margin-top: 10px;
         flex-direction: column;
         align-items: flex-start; 
     }
     .header_menu ul li {
+        height: 30px;
         margin-right: 0;
-        margin-bottom: 5px; 
+        margin-bottom: 1px; 
     }
 
     svg {
@@ -371,50 +378,84 @@ footer {
 
     .header_phone {
         font-size: 1.5vw;
+    }
+    
+    .reg{
+        font-size: 0.7em;
+        padding: 0.4em 0.7em;
+        border-radius: 50px;
+    }
+
+    .sbros {
+        font-size: 0.7em;
+        padding: 0.4em 0.7em;
+        border-radius: 50px;
+    }
+
+    footer {
+        height: 2%;
     }
 }
 
 @media (max-width: 768px) {
     
-    body {
-        margin-top: 25px;
+    .adapt {
+        margin-top: 20vw;
     }
-    
+
     .container {
         grid-template-columns: 1fr;
-        padding: 2vw;
-        left: 2vw;
-        right: 2vw;
-        top: 5vw;
+        height: auto; 
+        padding: 3vw;
+        left: 20vw;
+        right: 24vw;
+        bottom: auto;
+        top: 10vw;
+    }
+
+    input::placeholder {
+        font-size: 1.5em;
     }
 
     .photoreg {
-        width: 80%; 
+        grid-column: 1;
         justify-self: center;
-        align-items: center;
+        margin-top: 0;
+        width: 50vw;
+        height: auto;
     }
 
-    .text {
-        font-size: 4vw; 
+    form {
+        grid-column: 1;
+        justify-self: left;
+        width: 50%;
     }
-    
+
     .header_logo {
         left: 45%;
     }
+    
     .logo {
         width: 20vw;
+    }
+    
+    .mobile {
+        width: 4vw;
     }
 
     .header_menu ul li a {
         font-size: 1.5vw;
     }
+
     .header_menu ul {
+        margin-top: 10px;
         flex-direction: column;
         align-items: flex-start; 
     }
     .header_menu ul li {
+        height: 30px;
         margin-right: 0;
-        margin-bottom: 5px; 
+        margin-bottom: 1px; 
     }
 
     svg {
@@ -424,5 +465,21 @@ footer {
 
     .header_phone {
         font-size: 1.5vw;
+    }
+
+    .reg{
+        font-size: 0.7em;
+        padding: 0.4em 0.7em;
+        border-radius: 50px;
+    }
+
+    .sbros {
+        font-size: 0.7em;
+        padding: 0.4em 0.7em;
+        border-radius: 50px;
+    }
+    
+    footer {
+        height: 4%;
     }
 }

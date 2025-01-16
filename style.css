@@ -344,6 +344,8 @@ footer {
         grid-column: 1;
         justify-self: center;
         margin-top: 0;
+        width: 43vw;
+        height: auto;
     }
 
     form {

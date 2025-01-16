@@ -165,7 +165,7 @@ header {
 .hi2 {
     grid-row: 1;
     grid-column: 2;
-    margin-left: 5vw;
+    margin-left: 2vw;
     width: 30vw;
     height: auto;
     padding: 10px;

@@ -1,0 +1,401 @@
+body {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    height: 67vw;
+}
+
+.back {
+    width:20%;
+    border-radius: 15px;
+    font-size: 1.5vw;
+    text-align: center;
+    color: black;
+    border: 3px solid black;
+    text-decoration: none;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 15px;
+    margin-bottom: 25px;
+    border: 4px solid black;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    display: inline-block;
+    text-align: center;
+    background-color: #ffffff;
+    color: #000;
+}
+
+.style {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #000;
+    color: #fff;
+    border: 4px solid rgb(255, 132, 0);
+}
+
+input#black-white:checked ~ .theme-content {
+    background-color: #000;
+    color: #fff;
+}
+
+input#white-black:checked ~ .theme-content {
+    background-color: #fff;
+    color: #000;
+}
+
+input#white-blue:checked ~ .theme-content {
+    background-color: #1e5790;
+    color: #fff;
+}
+
+/*black and white*/
+
+input#black-white:checked ~ .theme-content .header {
+    background-color: #000;
+}
+
+input#black-white:checked ~ .theme-content .header .header_menu ul li a {
+    color: #fff;
+}
+
+input#black-white:checked ~ .theme-content .header .header_menu ul li a:hover {
+    color: rgb(172, 169, 169);
+    text-decoration: underline;
+}
+
+input#black-white:checked ~ .theme-content .header .header_phone a {
+    color: #fff;
+}
+
+/*white & black */
+input#white-black:checked ~ .theme-content .header {
+    background-color: #fff;
+}
+
+input#white-black:checked ~ .theme-content .header .header_menu ul li a {
+    color: #000;
+}
+
+input#white-black:checked ~ .theme-content .header .header_menu ul li a:hover {
+    color: #5c5b5b;
+    text-decoration: underline;
+}
+
+input#white-black:checked ~ .theme-content .header .header_phone a {
+    color: #000;
+}
+
+/* white & blue */
+input#white-blue:checked ~ .theme-content .header {
+    background-color: #1e5790;
+}
+
+input#white-blue:checked ~ .theme-content .header .header_menu ul li a {
+    color: #fff;
+}
+
+input#white-blue:checked ~ .theme-content .header .header_menu ul li a:hover {
+    color: #d03232;
+    text-decoration: underline;
+}
+
+input#white-blue:checked ~ .theme-content .header .header_phone a {
+    color: #fff;
+}
+
+.header_menu {
+    font-weight: 700;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+}
+
+.header_menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; 
+}
+
+.header_menu ul li a {
+    display: inline-block;
+    line-height: 1.5;
+    padding: 15px 30px;
+    background-color: #ccc;
+    color: #000;
+    font-size: 1.8rem;
+    text-decoration: wavy;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+
+
+/* cтили для кнопок */
+input#black-white:checked ~ .theme-content .header .header_menu ul li a {
+    background-color: #000;
+    border: 4px solid white;
+    color: #fff;
+}
+
+input#white-black:checked ~ .theme-content .header .header_menu ul li a {
+    background-color: #fff;
+    border: 4px solid black;
+    color: #000;
+}
+
+input#white-blue:checked ~ .theme-content .header .header_menu ul li a {
+    background-color: #1e5790;
+    border: 4px solid white;
+    color: #fff;
+}
+
+.header_logo {
+    position: absolute;
+    left: 35%;
+    font-size: 2.5vw;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.header_right {
+    margin-left: auto;
+    display: flex;
+    align-items: right;
+    gap: 15px;
+    font-size: 1.8rem;
+}
+
+.mobile {
+    margin-left: 1vw;
+}
+
+.contact {
+    margin-left: 1vw;
+}
+
+.header_phone {
+    font-size: 1.8rem;
+}
+
+.header_phone a {
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+fieldset {
+    margin-top: 3vw;
+}
+
+legend {
+    font-size: 1.8vw; 
+    text-align: left;
+    font-weight: bold;
+}
+
+label input {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 4px solid #5a5252;
+    width: 80%;
+}
+
+.label {
+    width: 90%;
+    font-size: 1.5vw;
+}
+
+input::placeholder {
+    color: black;
+    font-size: 1.5vw;
+}
+
+input:focus::placeholder {
+    color: #2c0435;
+}
+
+input[required] {
+    border: 3px solid red;
+}
+
+input#white-black:checked ~ .theme-content button {
+    color: #000;
+    border: 4px solid black;
+    background-color: white;
+    padding: 10px 20px;
+    margin: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5vw;
+}
+
+input#black-white:checked ~ .theme-content button {
+    color: #fff;
+    border: 4px solid white;
+    background-color: black;
+    padding: 10px 20px;
+    margin: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5vw;
+}
+
+input#white-blue:checked ~ .theme-content button {
+    color: #fff;
+    border: 4px solid white;
+    background-color: #1e5790;
+    padding: 10px 20px;
+    margin: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5vw;
+}
+
+footer {
+    text-align: center;
+    background-color: #000000;
+    color: #DBC3DB;
+    padding: 3px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 1.5vw;
+    height: 8%;
+    border: 4px solid white;
+}
+
+input#white-black:checked ~ .theme-content footer {
+    color: #000000;
+    border: 4px solid black;
+    background-color: white;
+}
+
+input#white-blue:checked ~ .theme-content footer {
+    color: #ffffff;
+    border: 4px solid rgb(255, 255, 255);
+    background-color: #1e5790;
+}
+
+@media (max-width: 1300px) and (min-width:768px) {
+    body {
+        height: 1260px;
+    }
+
+    .back {
+        width: 25%;
+        font-size: 2vw;
+    }
+    
+    .header_logo {
+        font-size: 2.2vw;
+        left: 30%;
+    }
+    
+    .header_menu ul li a {
+        font-size: 1.5rem;
+    }
+    
+    .header_right {
+        font-size: 1.6rem;
+        margin-top: 8vw;
+    }
+    
+    .label {
+        font-size: 2vw;
+    }
+    
+    legend {
+        font-size: 3vw;
+    }
+
+    .header_phone a {
+        font-size: 1.6rem;
+    }
+    
+    .header_logo {
+        font-size: 3vw;
+        left: 40%;
+    }
+
+    input::placeholder {
+        font-size: 2vw;
+    }
+
+    footer {
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        height: 1280px;
+    }
+    
+    .back {
+        width: 50%;
+        font-size: 4vw;
+    }
+    
+    .header_logo {
+        font-size: 4vw;
+        left: 25%;
+    }
+    
+    .header_menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .header_menu ul li a {
+        font-size: 1.3rem;
+        padding: 10px 15px;
+    }
+    
+    .header_right {
+        font-size: 1.4rem;
+        display: block;
+        text-align: center;
+    }
+    
+    .header_phone a {
+        font-size: 1.4rem;
+    }
+
+    label {
+        font-size: 1.5rem;
+        padding: 8px 15px;
+        margin: 10px;
+    }
+    
+    .header_phone {
+        font-size: 1.4rem;
+    }
+
+    legend {
+        font-size: 4vw;
+    }
+
+    input::placeholder {
+        font-size: 3vw;
+    }
+
+    footer {
+        font-size: 2.5vw;
+    }
+}

@@ -142,8 +142,56 @@ header {
 ::-webkit-scrollbar-track {
     background-color: #f9eef6;
 }
+.firstpart {
+    display: grid;
+    grid-template-columns: 50px auto; 
+    grid-gap: 20px;
+}
+
+.glasses {
+    grid-column: 1;
+    position: relative;
+    display: inline-block; 
+    background-color: white;
+    transition: width 0.3s ease; 
+    width: 50px; 
+    height: 50px; 
+    padding: 5px; 
+    border-radius: 10px; 
+}
+
+.glasses a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    height: 100%; 
+}
+
+.glasses img {
+    width: 50px; 
+    height: auto;
+    transition: transform 0.3s ease; 
+}
+
+.glasses span {
+    font-weight: 700;
+    opacity: 0; 
+    margin-left: 10px;
+    font-size: 18px;
+    transition: opacity 0.3s ease; 
+}
+
+.glasses:hover {
+    width: fit-content; 
+}
+
+.glasses:hover span {
+    opacity: 1;
+}
 
 .text {
+    grid-column: 2;
     color: #FFF0F5;
     text-shadow: 
         2px 2px 0 #db7093,
@@ -156,10 +204,10 @@ header {
     background-clip: text;
     font-size: 3vw;
     font-family: "Source Sans Pro", sans-serif;
-    animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+    animation: big 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
   }
   
-  @keyframes reveal {
+  @keyframes big {
     80% {
       letter-spacing: 4px;
     }
@@ -184,7 +232,7 @@ header {
     left: 10vw;
     right: 10vw;
     bottom: 50vw;
-    top: 13vw;
+    top: 14vw;
     height: 40vw;
 }
 
@@ -415,6 +463,14 @@ footer {
     
     .adapt {
         margin-top: 0vw;
+    }
+
+    .glasses {
+        width: 40px;
+        height: auto;
+        margin-top: 50px;
+        padding: 2px;
+        z-index: 1000;
     }
 
     .container {

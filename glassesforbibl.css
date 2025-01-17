@@ -3,9 +3,51 @@ body {
     font-weight: 300;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    height: 67vw;
 }
 
+.cards-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 5vw;
+}
+
+.cardd {
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    margin-bottom: 3vw;
+    width: 250px; 
+    border-radius: 20px;
+    overflow: hidden; 
+    box-shadow: 0 4px 8px #db7093; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cardd:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px #db7093;
+}
+
+.card_image {
+    margin: 15px;
+    width: 90%; 
+    border-radius: 40px;
+    object-fit: contain;
+}
+
+.card_content {
+    padding: 16px;
+    text-align: center;
+}
+
+.card_content h4 {
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+  
 .back {
     width:20%;
     border-radius: 15px;
@@ -32,12 +74,6 @@ label {
     text-align: center;
     background-color: #ffffff;
     color: #000;
-}
-
-.style {
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 0;
 }
 
 input[type="radio"]:checked + label {
@@ -141,8 +177,6 @@ input#white-blue:checked ~ .theme-content .header .header_phone a {
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
-
-
 /* cтили для кнопок */
 input#black-white:checked ~ .theme-content .header .header_menu ul li a {
     background-color: #000;
@@ -195,42 +229,6 @@ input#white-blue:checked ~ .theme-content .header .header_menu ul li a {
     transition: color 0.3s;
 }
 
-fieldset {
-    margin-top: 3vw;
-}
-
-legend {
-    font-size: 1.8vw; 
-    text-align: left;
-    font-weight: bold;
-}
-
-label input {
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 5px;
-    border: 4px solid #5a5252;
-    width: 80%;
-}
-
-.label {
-    width: 90%;
-    font-size: 1.5vw;
-}
-
-input::placeholder {
-    color: black;
-    font-size: 1.5vw;
-}
-
-input:focus::placeholder {
-    color: #2c0435;
-}
-
-input[required] {
-    border: 3px solid red;
-}
-
 input#white-black:checked ~ .theme-content button {
     color: #000;
     border: 4px solid black;
@@ -267,6 +265,36 @@ input#white-blue:checked ~ .theme-content button {
     font-size: 1.5vw;
 }
 
+input#white-black:checked ~ .theme-content .cardd {
+    color: #000;
+    border: 4px solid black;
+    background-color: white;
+}
+
+input#black-white:checked ~ .theme-content .cardd {
+    color: #fff;
+    border: 4px solid white;
+    background-color: black;
+}
+
+input#white-blue:checked ~ .theme-content .cardd {
+    color: #fff;
+    border: 4px solid white;
+    background-color: #1e5790;
+}
+
+input#white-blue:checked ~ .theme-content .card_content h4 {
+    color: #fff;
+}
+
+input#black-white:checked ~ .theme-content .card_content h4 {
+    color: #fff;
+}
+
+input#white-black:checked ~ .theme-content .card_content h4 {
+    color: #000;
+}
+
 footer {
     text-align: center;
     background-color: #000000;
@@ -293,13 +321,13 @@ input#white-blue:checked ~ .theme-content footer {
 }
 
 @media (max-width: 1300px) and (min-width:768px) {
-    body {
-        height: 1260px;
+    .cards-container {
+        margin-bottom: 5vw;
     }
 
-    .header_logo {
-        font-size: 2.2vw;
-        left: 30%;
+    .back {
+        width: 25%;
+        font-size: 2vw;
     }
     
     .header_menu ul li a {
@@ -311,14 +339,6 @@ input#white-blue:checked ~ .theme-content footer {
         margin-top: 8vw;
     }
     
-    .label {
-        font-size: 2vw;
-    }
-    
-    legend {
-        font-size: 3vw;
-    }
-
     .header_phone a {
         font-size: 1.6rem;
     }
@@ -328,18 +348,14 @@ input#white-blue:checked ~ .theme-content footer {
         left: 40%;
     }
 
-    input::placeholder {
-        font-size: 2vw;
-    }
-
     footer {
         font-size: 2.5vw;
     }
 }
 
 @media (max-width: 768px) {
-    body {
-        height: 1280px;
+    .cards-container {
+        margin-bottom: 10vw;
     }
     
     .back {
@@ -381,10 +397,6 @@ input#white-blue:checked ~ .theme-content footer {
     
     .header_phone {
         font-size: 1.4rem;
-    }
-
-    legend {
-        font-size: 4vw;
     }
 
     input::placeholder {

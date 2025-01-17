@@ -363,7 +363,7 @@ footer {
     background-position: -100% 100%;
   }
 
-  @media (max-width: 1300px) {
+  @media (max-width: 1300px) and (min-width:768px) {
     .adapt {
         margin-top: 5vw;
     }

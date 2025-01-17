@@ -167,8 +167,8 @@ h1 {
 }
 
 .cell {
-    width: 40px;
-    height: 40px;
+    width: 2.5vw;
+    height: 2.5vw;
     background-color: #fff;
     border: 2px solid #f39b88;
     cursor: pointer;
@@ -233,11 +233,16 @@ button {
     background-position: -100% 100%;
   }
 
-  @media (max-width: 1300px) {
+  @media (max-width: 1300px) and (min-width:768px) {
     .header_logo {
         left: 45%;
     }
     
+    .container {
+        width: 60vw;
+        height: auto;
+    }
+
     .logo {
         width: 30vw;
         height: auto;
@@ -298,6 +303,11 @@ button {
         left: 45%;
     }
     
+    .container {
+        width: 30vw;
+        height: auto;
+    }
+
     .logo {
         width: 30vw;
         height: auto;
@@ -338,15 +348,20 @@ button {
     .game-board {
         width: 55vw;
         height: auto;
-        grid-template-columns: repeat(15, 5vw);
-        grid-template-rows: repeat(15, 5vw);
+        grid-template-columns: repeat(15, 2vw);
+        grid-template-rows: repeat(15, 2vw);
     }
 
-    input, button {
+     button {
         font-size: 1.5vw;
         padding: 1em 1em;
     }
 
+    input {
+        width: 60%;
+        font-size: 1.5vw;
+    }
+    
     h1 {
         font-size: 4vw;
     }

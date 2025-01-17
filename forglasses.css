@@ -371,6 +371,7 @@ input#white-blue:checked ~ .theme-content footer {
         font-size: 1.4rem;
         display: block;
         text-align: center;
+        margin-top: 100px;
     }
     
     .header_phone a {

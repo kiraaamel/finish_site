@@ -317,7 +317,7 @@ footer {
     }
     .glasses {
         width: 40px;
-        height: auto;
+        height: 40px;
         margin-top: 50px;
         padding: 2px;
         z-index: 1000;

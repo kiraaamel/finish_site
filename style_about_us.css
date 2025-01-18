@@ -330,6 +330,13 @@ button {
 }
 
 @media (max-width: 768px) {
+    .glasses {
+        width: 40px;
+        height: auto;
+        margin-top: 50px;
+        padding: 2px;
+        z-index: 1000;
+    }
     .header_logo {
         left: 45%;
     }

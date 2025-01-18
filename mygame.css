@@ -1,10 +1,13 @@
 * {
     box-sizing: border-box;
 }
-
 header {
     background-color: #FFF0F5;
     font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
     position: fixed;
     z-index: 999;
     top: 0;
@@ -20,6 +23,7 @@ header {
 .header_menu ul {
     height: 60px;
     display: flex;
+    gap: 20px;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -134,22 +138,26 @@ header {
 
 body {
     font-family:  "Alegreya", serif ;
-    display: flex;
+    display: grid;
+    grid-template-rows: auto auto;
     justify-content: center;
     align-items: center;
-    height: 120vh;
     color: #db7093;
     background-image: url('фон2.jpg'); 
     background-size: cover;
 }
 
 .container {
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
     text-align: center;
-    margin-right: 10px;
 }
 
 h1 {
-    margin-top: 2vw;
+    margin-top: 100px;
     margin-bottom: 20px;
     font-size: 2vw;
 }
@@ -167,8 +175,8 @@ h1 {
 }
 
 .cell {
-    width: 2.5vw;
-    height: 2.5vw;
+    width: 100%;
+    height: 100%;
     background-color: #fff;
     border: 2px solid #f39b88;
     cursor: pointer;
@@ -233,11 +241,23 @@ button {
     background-position: -100% 100%;
   }
 
+  .button-container {
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
   @media (max-width: 1300px) and (min-width:768px) {
     .header_logo {
         left: 45%;
     }
-    
+
+    cardbutton {
+        font-size: 14px;
+        padding: 2px;
+    }
+
     .container {
         width: 60vw;
         height: auto;
@@ -263,8 +283,7 @@ button {
     .header_menu ul li {
         height: 15px;
         margin-right: 0;
-        margin-bottom: 20px; 
-        top: 10px;
+        top: 3px;
     }
 
     .header_phone {
@@ -275,34 +294,22 @@ button {
         height: 105px;
     }
 
-    svg {
-        width: 20;
-        height: 20;
-    }
-    
-    .game-board {
-        grid-template-columns: repeat(15, 4vw);
-        grid-template-rows: repeat(15, 4vw);
-    }
-
     input, button {
-        font-size: 1.5vw;
-        padding: 1em 1em;
+        font-size: 15px;
+        padding: 2px 2px;
+        height: auto;
     }
 
     h1 {
-        font-size: 3vw;
+        font-size: 25px;
     }
-
-
-    
 }
 
 @media (max-width: 768px) {
     .header_logo {
         left: 45%;
     }
-    
+
     .container {
         width: 30vw;
         height: auto;
@@ -328,8 +335,7 @@ button {
     .header_menu ul li {
         height: 15px;
         margin-right: 0;
-        margin-bottom: 20px; 
-        top: 10px;
+        top: 3px;
     }
 
     .header_phone {
@@ -340,47 +346,40 @@ button {
         height: 105px;
     }
 
-    svg {
-        width: 20;
-        height: 20;
-    }
-    
-    .game-board {
-        width: 55vw;
-        height: auto;
-        grid-template-columns: repeat(15, 2vw);
-        grid-template-rows: repeat(15, 2vw);
-    }
-
-     button {
-        font-size: 1.5vw;
-        padding: 1em 1em;
-    }
-
     input {
         width: 60%;
+        height: auto;
         font-size: 1.5vw;
     }
     
+    button {
+        font-size: 12px;
+    }
     h1 {
-        font-size: 4vw;
+        font-size: 20px;
     }
 
-    
+    .cardbutton {
+        font-size: 14px;
+        padding: 2px 2px;
+    }
+    .open-btn {
+        width: 100px;
+    }
 }
-
 .otk {
     display: none;
   }
   
   .open-btn {
     cursor: pointer;
-    padding: 10px;
+    padding: 5px;
     background-color: #FFF0F5;
     color: #f77456;
     border: 2px solid #f77456;
     border-radius: 20px;
     font-size: 16px;
+    width: 10vw;
   }
   
   .okno {
@@ -413,7 +412,7 @@ button {
   }
   
   .otk:checked + .okno {
-    display: block;
+    display: flex;
   }
   
   .pravila {

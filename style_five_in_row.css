@@ -146,6 +146,45 @@ body {
     background-image: url('фон2.jpg'); 
     background-size: cover;
 }
+.glasses {
+    grid-row: 2;
+    background-color: white;
+    transition: width 0.3s ease; 
+    width: 50px; 
+    height: 50px; 
+    padding: 5px; 
+    border-radius: 10px; 
+}
+
+.glasses a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    height: 100%; 
+}
+
+.glasses img {
+    width: 50px; 
+    height: auto;
+    transition: transform 0.3s ease; 
+}
+
+.glasses span {
+    font-weight: 700;
+    opacity: 0; 
+    margin-left: 10px;
+    font-size: 18px;
+    transition: opacity 0.3s ease; 
+}
+
+.glasses:hover {
+    width: fit-content; 
+}
+
+.glasses:hover span {
+    opacity: 1;
+}
 
 .container {
     grid-row: 1;

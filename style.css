@@ -93,7 +93,7 @@ header {
     align-items: center;
     justify-items: right;
     height: 100%;
-    gap: 15px;
+    gap: 4vw;
 }
 
 .logo {
@@ -374,7 +374,7 @@ footer {
         left: 26vw;
         right: 24.5vw;
         bottom: auto;
-        top: 18vw;
+        top: 20vw;
     }
     label {
         font-size: 1.5vw;
@@ -431,11 +431,6 @@ footer {
         margin-right: 0;
         margin-bottom: 20px; 
         top: 10px;
-    }
-
-    svg {
-        width: 20;
-        height: 20;
     }
 
     .header_phone {
@@ -536,12 +531,6 @@ footer {
         margin-bottom: 20px; 
         top: 10px;
     }
-
-    svg {
-        width: 15;
-        height: 15;
-    }
-
     .header_phone {
         margin-right: 10px;
         font-size: 1.5vw;

@@ -91,7 +91,7 @@ header {
     display: flex;
     align-items: center;
     height: 100%;
-    gap: 15px;
+    gap: 4vw;
 }
 
 .logo {
@@ -309,11 +309,6 @@ footer {
     header {
         height: 105px;
     }
-
-    svg {
-        width: 20;
-        height: 20;
-    }
 }
 
 @media (max-width: 768px) {
@@ -351,10 +346,5 @@ footer {
 
     header {
         height: 105px;
-    }
-
-    svg {
-        width: 20;
-        height: 20;
     }
 }

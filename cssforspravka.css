@@ -93,7 +93,7 @@ header {
     display: flex;
     align-items: center;
     height: 100%;
-    gap: 15px;
+    gap: 4vw;
 }
 
 .logo {
@@ -274,10 +274,6 @@ button {
         height: 105px;
     }
 
-    svg {
-        width: 20;
-        height: 20;
-    }
     .hi2 {
         width: 30vw;
     }
@@ -331,14 +327,8 @@ button {
     header {
         height: 105px;
     }
-
-    svg {
-        width: 20;
-        height: 20;
-    }
-
     .hi2 {
-        width: 20vw;
+        width: 30vw;
     }
 
     .info1 {

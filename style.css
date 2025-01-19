@@ -107,7 +107,6 @@ header {
 
 .mobile {
     display: flex;
-    align-items: right;
     font-weight: 700;
     color:#81314c;
     width: 6vw;
@@ -199,8 +198,8 @@ header {
         2px -2px 0 #db7093,
        -2px -2px 0 #db7093;
     text-align: center;
-    background: 50% 100% / 50% 50% no-repeat radial-gradient(ellipse at bottom, #e48772, transparent, transparent);
-    -webkit-background-clip: text; 
+    background: 50% 100% / 50% 50% no-repeat radial-gradient(ellipse at bottom, #e48772, transparent, transparent); 
+    -webkit-background-clip: text;
     background-clip: text;
     font-size: 3vw;
     font-family: "Source Sans Pro", sans-serif;

@@ -342,27 +342,6 @@ footer {
     background-position: -100% 100%;
   }
 
-  .sbros{
-    display: inline-block;
-    font: 300 1.3em 'Open Sans';
-    text-decoration: none; 
-    color: #DB2222;
-    background-color: transparent;
-    border: 2px solid  #DB2222;
-    border-radius: 100px;
-    padding: 0.4em 2em;
-    margin-bottom: 50px;
-    background-size: 200% 100%; 
-    background-image: linear-gradient(to right, transparent 50%,  #DB2222 50%);
-    transition: background-position .3s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .5s ease 0s, background-color .5s ease;
-  }
-  
-  .sbros:hover{
-    color:rgba(255, 255, 255, 1);
-    background-color: #DB2222;
-    background-position: -100% 100%;
-  }
-
   @media (max-width: 1300px) and (min-width:768px) {
     .adapt {
         margin-top: 5vw;
@@ -438,12 +417,6 @@ footer {
     }
 
     .reg{
-        font-size: 1.2em;
-        padding: 0.4em 0.7em;
-        border-radius: 50px;
-    }
-
-    .sbros {
         font-size: 1.2em;
         padding: 0.4em 0.7em;
         border-radius: 50px;
@@ -542,12 +515,6 @@ footer {
         border-radius: 50px;
     }
 
-    .sbros {
-        font-size: 0.7em;
-        padding: 0.4em 0.7em;
-        border-radius: 50px;
-    }
-    
     .day {
         font-size: 2.5vw;
     }

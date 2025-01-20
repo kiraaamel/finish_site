@@ -14,11 +14,6 @@ body {
 }
 
 header {
-    background-color: #FFF0F5;
-    font-size: 25px;
-    position: relative;
-    z-index: 999;
-    top: 0;
     font-family:  "Alegreya", serif ;
 }
 
@@ -37,7 +32,6 @@ header {
 
 .header_menu ul li {
     margin-right: 30px;
-    height: 100%;
     display: flex;
     align-items: center;
     position: relative;
@@ -76,7 +70,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 65px;
     position: relative;
 }
 

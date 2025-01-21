@@ -83,7 +83,7 @@ header {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    line-height: 100;
+    line-height: 200px;
 }
 
 .header_right {
@@ -94,10 +94,12 @@ header {
     gap: 4vw;
 }
 
-.logo {
-    width: 20vw; 
-    height: auto;
-}
+h1 {
+    color: #81314c;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 45px; 
+    font-weight: 500;
+ }
 
 .contact {
     margin-left: 10px;
@@ -272,14 +274,13 @@ footer {
     margin-top: 10px;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
     .header_logo {
         left: 45%;
     }
     
-    .logo {
-        width: 30vw;
-        height: auto;
+    h1 {
+        font-size: 28px;
     }
  
     .mobile {
@@ -321,9 +322,8 @@ footer {
         padding: 2px;
         z-index: 1000;
     }
-    .logo {
-        width: 30vw;
-        height: auto;
+    h1 {
+        font-size: 16px;
     }
  
     .mobile {

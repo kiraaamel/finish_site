@@ -85,7 +85,7 @@ header {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    line-height: 100;
+    line-height: 200px;
 }
 
 .header_right {
@@ -96,9 +96,11 @@ header {
     gap: 4vw;
 }
 
-.logo {
-    width: 20vw; 
-    height: auto;
+h1 {
+    color: #81314c;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 45px; 
+    font-weight: 500;
 }
 
 .contact {
@@ -186,7 +188,7 @@ header {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 2fr; 
+    grid-template-columns: 1fr 1fr; 
     grid-template-rows: auto auto auto;
     grid-gap: 20px;
     padding: 3vw;
@@ -278,14 +280,13 @@ button {
     background-position: -100% 100%;
   }
 
-  @media (max-width: 1300px) {
+  @media (max-width: 1400px) {
     .header_logo {
         left: 45%;
     }
     
-    .logo {
-        width: 30vw;
-        height: auto;
+    h1 {
+        font-size: 28px;
     }
  
     .mobile {
@@ -340,9 +341,8 @@ button {
         left: 45%;
     }
     
-    .logo {
-        width: 30vw;
-        height: auto;
+    h1 {
+        font-size: 16px;
     }
  
     .mobile {

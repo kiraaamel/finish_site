@@ -1,4 +1,6 @@
-* {
+html, body {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 header {
@@ -23,7 +25,7 @@ header {
 .header_menu ul {
     height: 60px;
     display: flex;
-    gap: 20px;
+    gap: 15px;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -60,9 +62,9 @@ header {
 }
 
 .cont {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
     padding: 0 20px;
 }
 
@@ -89,9 +91,11 @@ header {
     gap: 4vw;
 }
 
-.logo {
-    width: 20vw; 
-    height: auto;
+h1 {
+    color: #81314c;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 45px; 
+    font-weight: 500;
 }
 
 .contact {
@@ -138,16 +142,13 @@ header {
 
 body {
     font-family:  "Alegreya", serif ;
-    display: grid;
-    grid-template-rows: auto auto;
-    justify-content: center;
-    align-items: center;
     color: #db7093;
     background-image: url('фон2.jpg'); 
     background-size: cover;
 }
+
 .glasses {
-    grid-row: 2;
+    margin-top: 125px;
     background-color: white;
     transition: width 0.3s ease; 
     width: 50px; 
@@ -187,30 +188,29 @@ body {
 }
 
 .container {
-    grid-row: 1;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 600px; /* Второй столбец фиксированной ширины */
     align-items: center;
-    margin: 5px;
-    text-align: center;
+    justify-items:center;
+    margin-top: 50px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 50px;
+    gap: 20px;
 }
 
-h1 {
-    margin-top: 100px;
+h2 {
+    text-align: center;
     margin-bottom: 20px;
     font-size: 2vw;
 }
 
 .game-board {
+    grid-column: 1;
     display: grid;
     grid-template-columns: repeat(15, 2.5vw);
     grid-template-rows: repeat(15, 2.5vw);
     gap: 2px;
-    margin-bottom: 20px;
-}
-
-.row {
-    display: flex;
 }
 
 .cell {
@@ -220,17 +220,24 @@ h1 {
     border: 2px solid #f39b88;
     cursor: pointer;
 }
-
 .cell:hover {
     background-color: #db7093;
 }
-
+.two {
+    width: 80%; /* Ширина будет автоматически подстраиваться */
+    max-width: 600px; /* Ограничение максимальной ширины */
+    grid-column: 2;
+    display: flex;
+    flex-direction: column ;
+}
 .controls {
     margin-top: 20px;
 }
 
 input {
-    width: 35%;
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
     height: 1.4vw;
     padding: 1vw;
     margin-bottom: 2vw;
@@ -242,7 +249,7 @@ input {
 
 input::placeholder {
     color: #78163F;
-    font-size: 1.2em;
+    font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -251,6 +258,7 @@ input:focus::placeholder {
 }
 
 button {
+    grid-column: 2;
     display: inline-block;
     font: 300 1.3em 'Open Sans';
     text-decoration: none; 
@@ -279,26 +287,36 @@ button {
     background-color:#f39b88;
     background-position: -100% 100%;
   }
-
+p {
+    font-size: 25px;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.pravila {
+    background-color: rgba(255, 255, 255, 0.658);
+    border: 3px solid lightpink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
   .button-container {
-    grid-row: 2;
+    grid-column: 2;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 220px;
   }
-  @media (max-width: 1300px) and (min-width:768px) {
+  @media (max-width: 1400px) and (min-width:768px) {
     .header_logo {
         left: 45%;
     }
 
-    cardbutton {
-        font-size: 14px;
-        padding: 2px;
-    }
-
-    .logo {
-        width: 30vw;
-        height: auto;
+    h1 {
+        font-size: 28px;
     }
  
     .mobile {
@@ -306,7 +324,7 @@ button {
     }
 
     .header_menu ul li a {
-        font-size: 1.5vw;
+        font-size: 18px;
     }
 
     .header_menu ul {
@@ -316,25 +334,31 @@ button {
     .header_menu ul li {
         height: 15px;
         margin-right: 0;
-        top: 3px;
-    }
 
+    }
+    .header_right {
+        flex-direction: column;
+        margin-right: 60px;
+        gap: 10px
+    }
     .header_phone {
-        font-size: 1.5vw;
+        font-size: 20px;
     }
-
     header {
         height: 105px;
     }
-
-    input, button {
-        font-size: 15px;
-        padding: 2px 2px;
-        height: auto;
+    .container {
+        grid-template-columns: 1fr 1fr; 
     }
-
-    h1 {
-        font-size: 25px;
+    .two {
+        width: 75%;
+    }
+    h2 {
+       
+       font-size: 30px;
+    }
+    p {
+        font-size: 16px;
     }
 }
 
@@ -343,113 +367,61 @@ button {
         left: 45%;
     }
     .glasses {
-        width: 40px;
         height: auto;
-        margin-top: 50px;
+        margin-top: 140px;
         padding: 2px;
-        z-index: 1000;
     }
-
-    .logo {
-        width: 30vw;
-        height: auto;
+    h1 {
+        font-size: 16px;
     }
- 
     .mobile {
         width: 6vw;
     }
-
     .header_menu ul li a {
-        font-size: 1.5vw;
+        font-size: 16px;
     }
-
     .header_menu ul {
         flex-direction: column;
-        align-items: flex-start; 
     }
     .header_menu ul li {
         height: 15px;
         margin-right: 0;
-        top: 3px;
     }
-
+    .header_right {
+        flex-direction: column;
+        margin-right: 60px;
+        gap: 10px;
+    }
     .header_phone {
-        font-size: 1.5vw;
+        font-size: 18px;
     }
-
     header {
         height: 105px;
     }
-
-    input {
-        width: 60%;
-        height: auto;
-        font-size: 1.5vw;
+    span {
+        font-size: 16px;
     }
-    
+    .contact {
+        font-size: 16px;
+    }
+    .container {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    .two {
+        width: 80%;
+    }
     button {
+        font-size: 13px;
+    }
+    input::placeholder {
         font-size: 12px;
     }
-    h1 {
+    h2 {
         font-size: 20px;
     }
-
-    .cardbutton {
+    p {
         font-size: 14px;
-        padding: 2px 2px;
-    }
-    .open-btn {
-        width: 100px;
     }
 }
-.otk {
-    display: none;
-  }
-  
-  .open-btn {
-    cursor: pointer;
-    padding: 5px;
-    background-color: #FFF0F5;
-    color: #f77456;
-    border: 2px solid #f77456;
-    border-radius: 20px;
-    font-size: 16px;
-  }
-  
-  .okno {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: auto;
-    overflow: auto;
-  }
-  
-  .content_okno {
-    background-color: #FFF0F5;
-    margin: 15% auto;
-    padding: 20px;
-    border: 2px solid #db7093;
-    width: 80%;
-    position: relative;
-  }
-  
-  .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 2vw;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .otk:checked + .okno {
-    display: flex;
-  }
-  
-  .pravila {
-    font-weight: 400;
-    font-size: 1.5vw;
-  }
+

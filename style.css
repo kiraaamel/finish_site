@@ -89,10 +89,12 @@ header {
     gap: 4vw;
 }
 
-.logo {
-    width: 20vw; 
-    height: auto;
-}
+h1 {
+    color: #81314c;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 45px; 
+    font-weight: 500;
+ }
 
 .contact {
     margin-left: 10px;
@@ -334,7 +336,7 @@ footer {
     background-position: -100% 100%;
   }
 
-  @media (max-width: 1300px) and (min-width:768px) {
+  @media (max-width: 1400px) and (min-width:768px) {
     .adapt {
         margin-top: 5vw;
     }
@@ -377,9 +379,8 @@ footer {
         left: 45%;
     }
     
-    .logo {
-        width: 30vw;
-        height: auto;
+    h1 {
+        font-size: 28px;
     }
     
     .hh {
@@ -473,8 +474,8 @@ footer {
         left: 45%;
     }
     
-    .logo {
-        width: 20vw;
+    h1 {
+        font-size: 16px;
     }
     
     .mobile {

@@ -152,6 +152,7 @@ h1 {
     height: 50px; 
     padding: 5px; 
     border-radius: 10px; 
+    z-index: 100;
 }
 
 .glasses a {
@@ -267,7 +268,7 @@ label {
 }
 
 input {
-    width: 100%;
+    width: 90%;
     padding: 1vw;
     border: 2px solid #FF9BAA;
     border-radius: 1vw;
@@ -337,28 +338,24 @@ footer {
   }
 
   @media (max-width: 1400px) and (min-width:768px) {
-    .adapt {
-        margin-top: 5vw;
-    }
     .container {
         grid-template-columns: 1fr;
         height: auto; 
         padding: 3vw;
         left: 26vw;
         right: 24.5vw;
-        bottom: auto;
         top: 20vw;
     }
     label {
-        font-size: 1.5vw;
+        font-size: 20px;
     }
 
     legend {
-        font-size: 2vw;
+        font-size: 25px;
     }
 
     input::placeholder {
-        font-size: 1.5em;
+        font-size: 15px;
     }
 
     .photoreg {
@@ -378,35 +375,56 @@ footer {
     .header_logo {
         left: 45%;
     }
-    
+
     h1 {
         font-size: 28px;
     }
-    
-    .hh {
-        height: 70px;
-    }
+ 
     .mobile {
         width: 6vw;
     }
 
     .header_menu ul li a {
-        font-size: 1.5vw;
+        font-size: 18px;
     }
 
     .header_menu ul {
         flex-direction: column;
         align-items: flex-start; 
+        gap: 15px;
     }
     .header_menu ul li {
         height: 15px;
         margin-right: 0;
-        margin-bottom: 20px; 
-        top: 10px;
-    }
 
+    }
+    .header_right {
+        flex-direction: column;
+        margin-right: 60px;
+        gap: 10px;
+        margin-top: 20px;
+    }
     .header_phone {
-        font-size: 1.5vw;
+        font-size: 20px;
+    }
+    header {
+        height: 105px;
+    }
+    .two {
+        width: 75%;
+    }
+    h2 {
+       
+       font-size: 30px;
+    }
+    p {
+        font-size: 16px;
+    }
+    span {
+        font-size: 20px;
+    }
+    .contact {
+        font-size: 20px;
     }
 
     .reg{
@@ -414,54 +432,34 @@ footer {
         padding: 0.4em 0.7em;
         border-radius: 50px;
     }
-
-    footer {
-        height: 2%;
-    }
 }
 
 @media (max-width: 768px) {
-    
-    .adapt {
-        margin-top: 0vw;
-    }
-
-    .glasses {
-        width: 40px;
-        height: auto;
-        margin-top: 50px;
-        padding: 2px;
-        z-index: 1000;
-    }
-
     .container {
         grid-template-columns: 1fr;
         height: auto; 
         padding: 3vw;
         left: 20vw;
         right: 24vw;
-        bottom: auto;
-        margin-top: 7vw;
+        margin-top: 15vw;
     }
 
     label {
-        font-size: 1.5vw;
+        font-size: 16px;
     }
 
     legend {
-        font-size: 2vw;
+        font-size: 20px;
     }
 
     input::placeholder {
-        font-size: 1.5em;
+        font-size: 14px;
     }
 
     .photoreg {
-        grid-column: 1;
         justify-self: center;
         margin-top: 0;
         width: 50vw;
-        height: auto;
     }
 
     form {
@@ -473,46 +471,55 @@ footer {
     .header_logo {
         left: 45%;
     }
-    
+    .glasses {
+        height: auto;
+        margin-top: 140px;
+        padding: 2px;
+    }
     h1 {
         font-size: 16px;
     }
-    
     .mobile {
         width: 6vw;
     }
-
     .header_menu ul li a {
-        font-size: 1.5vw;
+        font-size: 16px;
     }
-
     .header_menu ul {
         flex-direction: column;
-        align-items: flex-start; 
     }
-
     .header_menu ul li {
-        height: 15px;
+        height: 40px;
         margin-right: 0;
-        margin-bottom: 20px; 
-        top: 10px;
+    }
+    .header_right {
+        flex-direction: column;
+        margin-right: 40px;
+        gap: 10px;
+        margin-top: 20px;
     }
     .header_phone {
-        margin-right: 10px;
-        font-size: 1.5vw;
+        font-size: 18px;
+    }
+    header {
+        height: 105px;
+    }
+    span {
+        font-size: 16px;
+    }
+    .contact {
+        font-size: 16px;
     }
 
     .reg{
         font-size: 0.7em;
         padding: 0.4em 0.7em;
         border-radius: 50px;
+        margin-bottom: 100px;
     }
 
     .day {
         font-size: 2.5vw;
     }
 
-    footer {
-        height: 3%;
-    }
 }

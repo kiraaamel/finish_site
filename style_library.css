@@ -274,11 +274,11 @@ footer {
     margin-top: 10px;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1400px) and (min-width:768px) {
     .header_logo {
         left: 45%;
     }
-    
+
     h1 {
         font-size: 28px;
     }
@@ -288,7 +288,7 @@ footer {
     }
 
     .header_menu ul li a {
-        font-size: 1.5vw;
+        font-size: 18px;
     }
 
     .header_menu ul {
@@ -296,18 +296,30 @@ footer {
         align-items: flex-start; 
     }
     .header_menu ul li {
-        height: 15px;
+        height: 30px;
         margin-right: 0;
-        margin-bottom: 20px; 
-        top: 10px;
-    }
 
+    }
+    .header_right {
+        margin-top: 15px;
+        flex-direction: column;
+        margin-right: 60px;
+        gap: 10px
+    }
     .header_phone {
-        font-size: 1.5vw;
+        font-size: 20px;
     }
-
     header {
         height: 105px;
+    }
+    span {
+        font-size: 20px;
+    }
+    .contact {
+        font-size: 20px;
+    }
+    .cards-container {
+        margin-bottom: 40px;
     }
 }
 
@@ -316,40 +328,43 @@ footer {
         left: 45%;
     }
     .glasses {
-        width: 40px;
-        height: 40px;
-        margin-top: 50px;
+        height: auto;
         padding: 2px;
-        z-index: 1000;
     }
     h1 {
         font-size: 16px;
     }
- 
     .mobile {
         width: 6vw;
     }
-
     .header_menu ul li a {
-        font-size: 1.5vw;
+        font-size: 16px;
     }
-
     .header_menu ul {
         flex-direction: column;
-        align-items: flex-start; 
     }
     .header_menu ul li {
-        height: 15px;
+        height: 25px;
         margin-right: 0;
-        margin-bottom: 20px; 
-        top: 10px;
     }
-
+    .header_right {
+        flex-direction: column;
+        margin-right: 40px;
+        gap: 10px;
+    }
     .header_phone {
-        font-size: 1.5vw;
+        font-size: 18px;
     }
-
     header {
         height: 105px;
+    }
+    span {
+        font-size: 16px;
+    }
+    .contact {
+        font-size: 16px;
+    }
+    .cards-container {
+        margin-bottom: 40px;
     }
 }

@@ -360,6 +360,12 @@ p {
     p {
         font-size: 16px;
     }
+    span {
+        font-size: 20px;
+    }
+    .contact {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -389,7 +395,7 @@ p {
     }
     .header_right {
         flex-direction: column;
-        margin-right: 60px;
+        margin-right: 40px;
         gap: 10px;
     }
     .header_phone {

@@ -68,7 +68,7 @@ header {
     padding: 0 20px;
 }
 
-.hh {
+.head {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -189,7 +189,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 600px; /* Второй столбец фиксированной ширины */
+    grid-template-columns: 1fr 600px;
     align-items: center;
     justify-items:center;
     margin-top: 50px;
@@ -224,8 +224,8 @@ h2 {
     background-color: #db7093;
 }
 .two {
-    width: 80%; /* Ширина будет автоматически подстраиваться */
-    max-width: 600px; /* Ограничение максимальной ширины */
+    width: 80%; 
+    max-width: 600px; 
     grid-column: 2;
     display: flex;
     flex-direction: column ;
@@ -270,7 +270,10 @@ button {
     margin: 20px;
     background-size: 200% 100%; 
     background-image: linear-gradient(to right, transparent 50%, #f39b88 50%);
-    transition: background-position .3s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .5s ease 0s, background-color .5s ease;
+    transition: 
+        background-position 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.1s, 
+        color 0.5s ease 0s, 
+        background-color 0.5s ease;
   }
   
   button {

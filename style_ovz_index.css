@@ -134,15 +134,11 @@ input#white-blue:checked ~ .theme-content .header .header_phone a {
     display: inline-block;
     line-height: 1.5;
     padding: 15px 30px;
-    background-color: #ccc;
-    color: #000;
     font-size: 1.8rem;
     text-decoration: wavy;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
-
-
 
 /* cтили для кнопок */
 input#black-white:checked ~ .theme-content .header .header_menu ul li a {

@@ -13,7 +13,6 @@ body {
     margin-top: 50px;
     margin-bottom: 5vw;
 }
-
 .cardd {
     margin-left: 2.5vw;
     margin-right: 2.5vw;
@@ -21,13 +20,10 @@ body {
     width: 250px; 
     border-radius: 20px;
     overflow: hidden; 
-    box-shadow: 0 4px 8px #db7093; 
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
 }
-
 .cardd:hover {
     transform: scale(1.05); 
-    box-shadow: 0 8px 16px #db7093;
 }
 
 .card_image {

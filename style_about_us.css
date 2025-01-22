@@ -73,7 +73,7 @@ header {
     padding: 0 20px;
 }
 
-.hh {
+.head {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -262,7 +262,10 @@ button {
     border: 2px solid #f39b88;
     background-size: 200% 100%; 
     background-image: linear-gradient(to right, transparent 50%, #f39b88 50%);
-    transition: background-position .3s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .5s ease 0s, background-color .5s ease;
+    transition: 
+        background-position 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.1s, 
+        color 0.5s ease 0s, 
+        background-color 0.5s ease;
   }
   
   button {
@@ -280,7 +283,7 @@ button {
     background-position: -100% 100%;
   }
 
-  @media (max-width: 1400px) and (min-width: 768px) {
+@media (max-width: 1400px) and (min-width: 768px) {
     .header_logo {
         left: 45%;
     }

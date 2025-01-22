@@ -237,7 +237,7 @@ input#white-black:checked ~ .theme-content button {
     border-radius: 10px;
     text-align: center;
     font-weight: 700;
-    font-size: 1.5vw;
+    font-size: 20px;
 }
 
 input#black-white:checked ~ .theme-content button {
@@ -249,7 +249,7 @@ input#black-white:checked ~ .theme-content button {
     border-radius: 10px;
     text-align: center;
     font-weight: 700;
-    font-size: 1.5vw;
+    font-size: 20px;
 }
 
 input#white-blue:checked ~ .theme-content button {
@@ -261,7 +261,7 @@ input#white-blue:checked ~ .theme-content button {
     border-radius: 10px;
     text-align: center;
     font-weight: 700;
-    font-size: 1.5vw;
+    font-size: 20px;
 }
 
 input#white-black:checked ~ .theme-content .cardd {

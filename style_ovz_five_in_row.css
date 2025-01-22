@@ -203,7 +203,7 @@ input#white-black:checked ~ .theme-content button, .open-btn {
     border-radius: 10px;
     text-align: center;
     font-weight: 700;
-    font-size: 1.5vw;
+    font-size: 25px;
 }
 
 input#black-white:checked ~ .theme-content button{
@@ -215,7 +215,7 @@ input#black-white:checked ~ .theme-content button{
     border-radius: 10px;
     text-align: center;
     font-weight: 700;
-    font-size: 1.5vw;
+    font-size: 25px;
 }
 
 input#white-blue:checked ~ .theme-content button{
@@ -227,7 +227,7 @@ input#white-blue:checked ~ .theme-content button{
     border-radius: 10px;
     text-align: center;
     font-weight: 700;
-    font-size: 1.5vw;
+    font-size: 25px;
 }
 input {
     padding: 10px;
@@ -306,8 +306,8 @@ h1 {
 
 .game-board {
     display: grid;
-    grid-template-columns: repeat(15, 2.5vw);
-    grid-template-rows: repeat(15, 2.5vw);
+    grid-template-columns: repeat(15, 35px);
+    grid-template-rows: repeat(15, 35px);
     gap: 2px;
     margin-bottom: 20px;
 }
@@ -386,11 +386,14 @@ input#white-blue:checked ~ .theme-content .cell:hover {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 450px ) {
     body {
         height: 1280px;
     }
-    
+    .game-board {
+        grid-template-columns: repeat(15, 25px);
+        grid-template-rows: repeat(15, 25px);
+    }
     .back {
         width: 50%;
         font-size: 4vw;
@@ -429,4 +432,62 @@ input#white-blue:checked ~ .theme-content .cell:hover {
         font-size: 3vw;
     }
 
+}
+@media (max-width: 450px) {
+    .game-board {
+        grid-template-columns: repeat(15, 4vw);
+        grid-template-rows: repeat(15, 4vw);
+    }
+    body {
+        height: 1280px;
+    }
+    
+    .back {
+        width: 50%;
+        font-size: 25px;
+    }
+    
+    .header_logo {
+        font-size: 20px;
+        left: 25%;
+    }
+    h2 {
+        font-size: 23px;
+    }
+    .header_menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .header_menu ul li a {
+        font-size: 1.3rem;
+        padding: 10px 15px;
+    }
+    
+    .header_right {
+        font-size: 1.4rem;
+        display: block;
+        text-align: center;
+        margin-top: 100px;
+    }
+    
+    .header_phone a {
+        font-size: 1.4rem;
+    }
+    
+    .header_phone {
+        font-size: 1.4rem;
+    }
+    input::placeholder {
+        font-size: 3vw;
+    }
+    .close-btn {
+        top: 3px;
+        right: 5px;
+        font-size: 10px;
+    }
+    .pravila {
+        font-weight: 400;
+        font-size: 15px;
+    }
 }

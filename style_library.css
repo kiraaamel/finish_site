@@ -368,3 +368,42 @@ footer {
         margin-bottom: 40px;
     }
 }
+@media (max-width: 400px) {
+    h1 {
+        font-size: 14px;
+    }
+    .mobile {
+        width: 6vw;
+    }
+    .header_menu ul li a {
+        font-size: 12px;
+    }
+    .header_menu ul {
+        flex-direction: column;
+    }
+    .header_menu ul li {
+        height: 30px;
+        margin-right: 0;
+    }
+    .header_right {
+        flex-direction: column;
+        margin-right: 10px;
+        gap: 5px;
+        margin-top: 30px;
+    }
+    .header_phone {
+        font-size: 14px;
+    }
+    header {
+        height: 105px;
+    }
+    span {
+        font-size: 14px;
+    }
+    .contact {
+        font-size: 14px;
+    }
+    .day {
+        font-size: 18px;
+    }
+}

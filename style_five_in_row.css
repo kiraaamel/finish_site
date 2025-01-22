@@ -80,7 +80,7 @@ header {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    line-height: 100;
+    line-height: 100px;
 }
 
 .header_right {
@@ -368,7 +368,7 @@ p {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 450px){
     .header_logo {
         left: 45%;
     }
@@ -430,4 +430,66 @@ p {
         font-size: 14px;
     }
 }
-
+@media (max-width: 450px) {
+    .game-board {
+        grid-template-columns: repeat(15, 4vw);
+        grid-template-rows: repeat(15, 4vw);
+    }
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .glasses {
+        height: auto;
+        padding: 2px;
+    }
+    h1 {
+        font-size: 14px;
+    }
+    .mobile {
+        width: 6vw;
+    }
+    .header_menu ul li a {
+        font-size: 12px;
+    }
+    .header_menu ul {
+        flex-direction: column;
+    }
+    .header_menu ul li {
+        height: 13px;
+        margin-right: 0;
+    }
+    .header_right {
+        flex-direction: column;
+        margin-right: 10px;
+        gap: 5px;
+        margin-top: 30px;
+    }
+    .header_phone {
+        font-size: 14px;
+    }
+    header {
+        height: 105px;
+    }
+    span {
+        font-size: 14px;
+    }
+    .contact {
+        font-size: 14px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .two {
+        grid-column: 1;
+        width: 80%;
+    }
+    button {
+        font-size: 13px;
+    }
+    input::placeholder {
+        font-size: 12px;
+    }
+}

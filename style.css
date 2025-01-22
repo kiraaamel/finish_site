@@ -527,6 +527,9 @@ footer {
         grid-template-columns: 1fr;
         margin-top: 120px;
         height: 650px;
+        padding: 3vw;
+        left: 20vw;
+        right: 24vw;
     }
     .text {
         margin-top: 50px;
@@ -535,13 +538,20 @@ footer {
     input::placeholder {
         font-size: 12px;
     }
+    label {
+        font-size: 16px;
+    }
 
+    legend {
+        font-size: 20px;
+    }
     .photoreg {
         margin-top: 0;
         width: 50vw;
     }
 
     form {
+        grid-column: 1;
         width: 100%;
     }
     .glasses {
@@ -585,5 +595,11 @@ footer {
     }
     .day {
         font-size: 18px;
+    }
+    .reg{
+        font-size: 0.7em;
+        padding: 0.4em 0.7em;
+        border-radius: 50px;
+        margin-bottom: 100px;
     }
 }

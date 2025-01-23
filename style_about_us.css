@@ -105,6 +105,8 @@ h1 {
 
 .contact {
     margin-left: 10px;
+    text-decoration: none;
+    color:#2c0435;
 }
 
 .mobile {

@@ -193,6 +193,7 @@ h1 {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr; 
+    height: fit-content;
     grid-gap: 20px;
     padding: 5vw;
     background-color: white;
@@ -201,7 +202,6 @@ h1 {
     right: 10vw;
     bottom: 50vw;
     top: 14vw;
-    height: 40vw;
 }
 .photoreg {
     grid-column: 1;
@@ -297,11 +297,15 @@ footer {
     background-color:#f39b88;
     background-position: -100% 100%;
 }
-
+.required {
+    margin-top: 0;
+    color: red;
+    font-weight: 700;
+}
 @media (max-width: 1400px) and (min-width:768px) {
     .container {
         grid-template-columns: 1fr;
-        height: auto; 
+        height: fit-content;
         padding: 3vw;
         left: 26vw;
         right: 24.5vw;
@@ -397,7 +401,7 @@ footer {
 @media (max-width: 768px) and (min-width:450px) {
     .container {
         grid-template-columns: 1fr;
-        height: auto; 
+        height: fit-content;
         padding: 3vw;
         left: 20vw;
         right: 24vw;
@@ -487,7 +491,7 @@ footer {
     .container {
         grid-template-columns: 1fr;
         margin-top: 120px;
-        height: 650px;
+        height: fit-content;
         padding: 3vw;
         left: 20vw;
         right: 24vw;

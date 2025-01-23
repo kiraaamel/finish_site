@@ -317,7 +317,12 @@ input#white-blue:checked ~ .theme-content .cell {
 input#white-blue:checked ~ .theme-content .cell:hover {
     background-color: #6c9ac8;
 }
-
+iframe {
+    border: none;
+    margin-bottom: 20px;
+    width: 60%;
+    height: 405px;
+}
 @media (max-width: 1300px) and (min-width:768px) {
     body {
         height: auto;
